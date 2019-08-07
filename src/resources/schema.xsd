@@ -1,0 +1,30 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="LIST">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="RECORD" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:int" name="SUBE_KODU"/>
+                            <xs:element type="xs:int" name="REFNO"/>
+                            <xs:element type="xs:string" name="STOK_KODU"/>
+                            <xs:element type="xs:string" name="STOK_ADI"/>
+                            <xs:element type="xs:string" name="ALISFIYATI"/>
+                            <xs:element type="xs:byte" name="P_KDV"/>
+                            <xs:element type="xs:float" name="SATISFIYATI1"/>
+                            <xs:element type="xs:string" name="BARKOD"/>
+                            <xs:element type="xs:string" name="BARKOD2"/>
+                            <xs:element type="xs:string" name="BARKOD3"/>
+                            <xs:element type="xs:string" name="URETIM_YERI_NO"/>
+                            <xs:element type="xs:string" name="FIYAT_DEGISIM_TARIHI"/>
+                            <xs:element type="xs:string" name="BIRIM2"/>
+                            <xs:element type="xs:string" name="BIRIM2SATISFIYATI"/>
+                            <xs:element type="xs:string" name="BIRIM2BARKODU"/>
+                            <xs:element type="xs:float" name="BAKIYE"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
